@@ -37,7 +37,7 @@ html, body {
 }
 
 .header {
-    background-image: url("img/HP.png");
+    background-image: url("img/bk.jpg");
     background-repeat: no-repeat;
     background-position:center;
     display: flex;
