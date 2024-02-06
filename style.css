@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;
@@ -7,6 +9,10 @@ html, body {
     background-image: url("img/bk.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    font-family: 'Comic Sans MS',  sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
   }
 
 .itens{
