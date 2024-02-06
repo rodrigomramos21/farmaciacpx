@@ -37,16 +37,16 @@ html, body {
 }
 
 .header {
+    background-image: url("img/HP.png");
+    background-repeat: no-repeat;
+    background-position:center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70px;
     width: 100%;
   }
-  .header img {
-    width: 70px;
-    height: 70px;
-  }
+  
   
   input{
     border: 0;
