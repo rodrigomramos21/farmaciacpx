@@ -37,14 +37,15 @@ html, body {
 }
 
 .header {
-    background-image: url("img/bk.jpg");
+    background-image: url("img/teste.png");
     background-repeat: no-repeat;
     background-position:center;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     height: 70px;
-    width: 100%;
+    width: 70px;
+    left: 500px;
   }
   
   
