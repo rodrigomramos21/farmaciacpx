@@ -1,0 +1,50 @@
+<!DOCTYPE html
+<html lang="en">
+<head>  <meta charset="utf-8">
+  <meta name="port" content="=device-width, initial-scale=1.0">
+  <title>Calculadora de Itens</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  
+</head>
+<body>
+  <div class="header">
+    <img src="/img/HP.png" alt="LogoHP">
+  </div>
+  <form class="container">
+    <div class="itens">
+      <label for="kitMedico">Kit Médico:</label>
+      <input type="number" id="kitMedico" name="kitMedico" min="0" step="1">
+      <br>
+      <label for="ritmoneury">Ritmoneury:</label>
+      <input type="number" id="ritmoneury" name="ritmoneury" min="0" step="1">
+      <br>
+      <label for="sinkalmy">Sinkalmy:</label>
+      <input type="number" id="sinkalmy" name="sinkalmy" min="0" step="1">
+      <br>
+      <label for="bandagem">Bandagem:</label>
+      <input type="number" id="bandagem" name="bandagem" min="0" step="1">
+      <br>
+      <label for="gaze">Gaze:</label>
+      <input type="number" id="gaze" name="gaze" min="0" step="1">
+      <br>
+      <label for="analgesico">Analgésico:</label>
+      <input type="number" id="analgesico" name="analgesico" min="0" step="1">
+      <br>
+      <button type="button" onclick="calcularTotal()">Calcular Total</button>
+      <span id="total">Total: $0.00</span>
+    </div>
+  </form>
+  <script>
+    function calcularTotal() {
+      const kitMedico = document.getElementById('kitMedico').value * 1350;
+      const ritmoneury = document.getElementById('ritmoneury').value * 925;
+      const sinkalmy = document.getElementById('sinkalmy').value * 750;
+      const bandagem = document.getElementById('bandagem').value * 500;
+      const gaze = document.getElementById('gaze').value * 250;
+      const analgesico = document.getElementById('analgesico').value * 200;
+      const total = kitMedico + ritmoneury + sinkalmy + bandagem + gaze + analgesico;
+      document.getElementById('total').textContent = 'Total: $' + total.toFixed(2);
+    }
+  </script>
+</body>
+</html>
