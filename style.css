@@ -37,15 +37,17 @@ html, body {
 }
 
 .header {
-    background-image: url("img/teste.png");
-    background-repeat: no-repeat;
-    background-position:center;
-    
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 70px;
-    left: 500px;
+  background-image: url("img/teste.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
   
   
